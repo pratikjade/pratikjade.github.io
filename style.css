@@ -42,6 +42,7 @@ button {
 }
 
 body {
+  padding-top: 2rem;
   margin: 0;
   background-color: var(--bg-body);
   color: var(--text1);
