@@ -845,7 +845,7 @@ h1>span {
 }
 
 .contact__wrapper {
-  padding-block: 40px;
+  padding-block: 45px;
 }
 
 .contact__headline {
@@ -937,7 +937,7 @@ h1>span {
     translate: -75%;
   }
   .contact__wrapper {
-  padding-block: 25px;
+  padding-block: 60px;
 }
 .contact__email{
   margin-top: 30px;
