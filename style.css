@@ -845,7 +845,7 @@ h1>span {
 }
 
 .contact__wrapper {
-  padding-block: 50px;
+  padding-block: 40px;
 }
 
 .contact__headline {
@@ -906,6 +906,12 @@ h1>span {
   color: var(--text2);
 }
 
+.contact__phone{
+  display: block;
+  line-height: 1.5;
+  margin-block-end: 2px;
+  color: var(--text2);
+}
 
 .contact input:focus-visible:invalid~.contact__invalid-icon,
 .contact textarea:focus-visible:invalid~.contact__invalid-icon {
@@ -933,6 +939,21 @@ h1>span {
   .contact__wrapper {
   padding-block: 25px;
 }
+.contact__email{
+  margin-top: 30px;
+  display: block;
+  text-align: left;
+  line-height: 1.5;
+  margin-block-end: 2px;
+  color: var(--text2);
+}
+
+.contact__phone{
+  line-height: 1.5;
+  margin-block-end: 2px;
+  color: var(--text2);
+}
+
 }
 
 @media (min-width: 62.5em) {
