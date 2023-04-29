@@ -942,7 +942,7 @@ h1>span {
 .contact__email{
   margin-top: 30px;
   display: block;
-  text-align: left;
+  text-align: center;
   line-height: 1.5;
   margin-block-end: 2px;
   color: var(--text2);
@@ -950,6 +950,7 @@ h1>span {
 
 .contact__phone{
   line-height: 1.5;
+  text-align: center;
   margin-block-end: 2px;
   color: var(--text2);
 }
