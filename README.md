@@ -12,7 +12,7 @@ And the best part? I've hosted it on GitHub for easy access and sharing.
 ## link: [pratikjade.github.io](https://pratikjade.github.io/)
 
 
-Feel free to visit it, clone the repo, and customise it as you like.
+Feel free to visit it, clone the repository, and customise it as you like.
 
 Let me know your thoughts...
 
