@@ -14,6 +14,6 @@ And the best part? I've hosted it on GitHub for easy access and sharing.
 
 Feel free to visit it, clone the repo, and customise it as you like.
 
-Let me know your thoughts.
+Let me know your thoughts...
 
 and thanks to the [Coder Coder](https://youtu.be/65GVcdESj3s) YouTube channel for providing inspiration and help during the development...
