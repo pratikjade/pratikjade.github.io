@@ -271,6 +271,7 @@
             <img class="skills__rings" src="/assets/images/pattern-rings.svg" alt="" width="530" height="129" />
         </section>
 
+<!--https://github.com/pratikjade-->
 
         <section id="contact" class="contact bg-less-dark">
             <div class="wrapper contact__wrapper bottom-border">
@@ -282,7 +283,7 @@
                         possible.
                     </p>
                 </div>
-                <form action="https://formspree.io/f/mlekyway" method="POST" class="contact__form">
+                <form name="submit-to-google-sheet" action="" class="contact__form">
                     <div class="contact__control">
                         <label for="name" class="visually-hidden">Name</label>
                         <input type="text" id="name" name="name" placeholder="Name" required />
@@ -301,16 +302,35 @@
                             required></textarea>
                         <img src="/assets/images/icon-invalid.svg" alt="" class="contact__invalid-icon" width="24"
                             height="24" />
+                        <span id="msg" class="contact__control"></span>
                     </div>
                     <div class="contact__control align-right">
-                        <button> <a type="submit">Send Message </a> </button>
+                        <button> <a type="submit">&nbsp Send Message </a> </button>
                     </div>
                 </form>
-                <div>
+                <!-- <div>
                     <a href="mailto:pratikjade21@gmail.com" style="text-decoration:none" class="contact__email" style="text-align:left;">Email: pratikjade21@gmail.com</a>
                     <a href="tel:+91 9765120992" style="text-decoration:none" class="contact__phone" style="text-align:left;">Phone: +91 9765120992</a>
-                  </div>
+                  </div>-->
             </div>
+
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbyoxiiVwpFDeezThwZHKERmVMLMmstxqhHXVHuAF59JG0zHjZ50g_RKuc6w9RhY7qzl1Q/exec'
+                const form = document.forms['submit-to-google-sheet']
+                const msg = document.getElementById('msg')
+              
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                        msg.innerHTML = "Message Sent Successfully" 
+                        setTimeout(function(){ msg.innerHTML = "" }, 5000)
+                        form.reset()
+                    })
+
+                    .catch(error => console.error('Error!', error.message))
+                })
+            </script>
             
             <img class="contact__rings" src="/assets/images/pattern-rings.svg" alt="" width="530" height="129" />
         </section>
