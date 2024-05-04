@@ -280,6 +280,43 @@ svg {
 }
 
 
+@keyframes moveRing {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes moveCircle {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes moveUpDown {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* Apply the animation to the elements */
+.hero__rings {
+  animation: moveRing 3s infinite alternate;
+} 
+.hero__circle {
+  animation: moveUpDown 3s infinite;
+}
+
+.move-up-down {
+  animation: moveUpDown 3s infinite;
+}
+
+/* .hero__circle {
+  animation: moveCircle 4s infinite alternate;
+} */
+
+
+
+
 
 
 /*  HERO */
@@ -293,9 +330,9 @@ svg {
   position: absolute;
   right: 50%;
   top: 55px;
-  /* 8.125rem; */
+                        /* 8.125rem; */
   z-index: -1;
-  /* width: 33.125rem; */
+                        /* width: 33.125rem; */
   height: auto;
 }
 
@@ -305,6 +342,24 @@ svg {
   margin-bottom: -129px;
   translate: calc(100vw - 64px - 16px);
 }
+.hero__rings {
+  transition: transform 0.1s ease-in-out;
+}
+
+.hero__circle {
+  transition: transform 0.1s ease-in-out;
+}
+.hero__rings:hover {
+  transform: translateY(-50px);
+}
+
+.hero__circle:hover {
+  transform: translateX(-5px);
+}
+
+
+
+
 
 .hero__text {
   position: relative;
@@ -441,6 +496,10 @@ h1>span {
 
 /* education */
 
+.education__rings {
+  animation: moveRing 3s infinite alternate;
+} 
+
 .education {
   position: relative;
 }
@@ -488,9 +547,15 @@ h1>span {
 
 .education__rings {
   position: absolute;
-  bottom: -56px;
-  left: 85%;
+  bottom: -180px;
+  left: 0%;
   translate: 0 50%;
+}
+.education__rings {
+  transition: transform 0.1s ease-in-out;
+}
+.education__rings:hover {
+  transform: translateY(-50px);
 }
 
 @media screen and (max-width: 37.5em) {
@@ -517,6 +582,10 @@ h1>span {
 }
 
 /* experience */
+
+.experience__rings {
+  animation: moveRing 3s infinite alternate;
+} 
 
 .experience {
   position: relative;
@@ -578,6 +647,12 @@ h1>span {
   bottom: 0;
   left: 75%;
   translate: 0 50%;
+}
+.experience__rings {
+  transition: transform 0.1s ease-in-out;
+}
+.experience__rings:hover {
+  transform: translateY(-50px);
 }
 
 @media screen and (max-width: 37.5em) {
@@ -839,10 +914,19 @@ h1>span {
 
 .skills__rings {
   position: absolute;
-  bottom: 72px;
-  left: -12%;
+  bottom: 100px;
+  left: 70%;
   translate: 0 50%;
 }
+.skills__rings {
+  transition: transform 0.1s ease-in-out;
+}
+.skills__rings:hover {
+  transform: translateY(-50px);
+}
+.skills__rings {
+  animation: moveRing 3s infinite alternate;
+} 
 
 @media screen and (max-width: 37.5em) {
   .skills__wrapper {
@@ -974,6 +1058,9 @@ h1>span {
   bottom: 97px;
   translate: -75%;
 }
+.contact__rings {
+  animation: moveRing 3s infinite alternate;
+} 
 
 @media (max-width: 37.5em) {
   .contact__rings {
