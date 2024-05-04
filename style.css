@@ -141,6 +141,47 @@ a:hover {
   color: var(--accent);
 }
 
+g {
+  color: var(--accent);
+  transition: color var(--transition);
+}
+
+g:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px dashed var(--text1);
+  outline-offset: 2px;
+}
+
+input:invalid,
+textarea:invalid {
+  outline-color: var(--invalid);
+}
+
+g.underline,
+button {
+  display: inline-block;
+  padding-bottom: 0.625rem;
+  font-size: 1rem;
+  line-height: 1.625;
+  letter-spacing: 0.143em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-decoration: none;
+  background-image: linear-gradient(to right,
+      var(--text1) 75%,
+      var(--text1) 75%);
+  background-position: 0 2.1em;
+  background-repeat: repeat-x;
+  background-size: 8px 2px;
+}
+
+g:hover {
+  color: var(--text1);
+}
+
+
 img,
 svg {
   display: block;
